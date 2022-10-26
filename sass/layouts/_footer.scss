@@ -1,0 +1,109 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--hero-bacground-color);
+}
+
+.footer-container {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer-logo {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--text-nav-link-hover-color);
+    margin-bottom: 20px;
+}
+
+.accent-footer {
+    display: inline-block;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--hero-title-color);
+}
+
+.footer-adres {
+    transition: color var(--transition-duration);
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--hero-title-color);
+    margin-bottom: 9px;
+}
+
+.footer-adres:hover,
+.footer-adres:focus {
+    color: var(--text-nav-link-hover-color);
+}
+
+.footer-nav {
+    transition: color var(--transition-duration);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-nav-color);
+    margin-bottom: 9px;
+}
+
+.footer-nav:hover,
+.footer-nav:focus {
+    color: var(--text-nav-link-hover-color);
+}
+
+.footer-soc-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-title-color);
+    margin-bottom: 20px;
+}
+
+.footer-soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-soc-link {
+    transition: background-color var(--transition-duration);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hero-title-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-icon {
+    fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: rgba(33, 150, 243, 1);
+}
