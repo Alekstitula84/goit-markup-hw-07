@@ -62,12 +62,13 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--text-nav-link-hover-color);
+    &:hover,
+    &:focus {
+            color: var(--text-nav-link-hover-color);
+        }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--text-nav-link-hover-color);
-}
+
 
 .site-nav .link.current {
     color: var(--text-nav-link-hover-color);
@@ -100,13 +101,13 @@
     color: var(--auth-link-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    &:hover,
+    &:focus {
+            color: var(--text-nav-link-hover-color);
+        }
 }
 
 .auth-icon {
     fill: currentColor;
 }
 
-.auth-link:hover,
-.auth-link:focus {
-    color: var(--text-nav-link-hover-color);
-}

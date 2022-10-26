@@ -24,14 +24,14 @@
     color: var(--customer-link-color);
     border: 1px solid var(--customer-link-color);
     border-radius: 3.5px;
+    &:hover,
+    &:focus {
+            color: var(--text-nav-link-hover-color);
+            border: 1px solid var(--text-nav-link-hover-color);
+        }
 }
 
 .customers-icon {
     fill: currentColor;
 }
 
-.customers-link:hover,
-.customers-link:focus {
-    color: var(--text-nav-link-hover-color);
-    border: 1px solid var(--text-nav-link-hover-color);
-}

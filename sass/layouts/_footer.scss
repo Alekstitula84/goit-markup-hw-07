@@ -97,13 +97,13 @@
     justify-content: center;
     color: var(--hero-title-color);
     background-color: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus {
+            background-color: rgba(33, 150, 243, 1);
+        }
 }
 
 .footer-soc-icon {
     fill: currentColor;
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color: rgba(33, 150, 243, 1);
-}

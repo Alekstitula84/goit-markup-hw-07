@@ -45,9 +45,7 @@
     overflow: auto;
 }
 
-.img-item:hover .img-top-text {
-    transform: translateY(0);
-}
+
 
 .img-text {
     display: block;
@@ -60,15 +58,18 @@
 
 .img-item {
     flex-basis: calc(100% / 3 - 60px);
+    &:hover .img-top-text {
+            transform: translateY(0);
+        }
 }
 
 .img-link {
     transition: box-shadow var(--transition-duration);
     display: block;
+    &:hover,
+    &:focus {
+         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
-.img-link:hover,
-.img-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}

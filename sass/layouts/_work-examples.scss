@@ -21,16 +21,17 @@
 .work-examp-item {
   position: relative;
   width: calc((100% - 60px) / 3);
+  &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      min-height: 70px;
+      bottom: 0%;
+      background-color: var(--work-examp-before-background);
+    }
 }
 
-.work-examp-item::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  min-height: 70px;
-  bottom: 0%;
-  background-color: var(--work-examp-before-background);
-}
+
 
 .work-examp-img {
   display: block;

@@ -74,14 +74,14 @@
     align-items: center;
     justify-content: center;
     color: rgba(175, 177, 184, 1);
+    &:hover,
+    &:focus {
+            background-color: rgba(33, 150, 243, 1);
+            color: var(--hero-title-color);
+        }
 }
 
 .team-soc-icon {
     fill: currentColor;
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-    background-color: rgba(33, 150, 243, 1);
-    color: var(--hero-title-color);
-}
