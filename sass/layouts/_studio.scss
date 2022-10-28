@@ -1,4 +1,4 @@
-.studio-title {
+.studio__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -7,16 +7,16 @@
     margin-bottom: 10px;
 }
 
-.studio-list {
+.studio {
     display: flex;
     gap: 30px;
 }
 
-.studio-icon {
+.studio__icon {
     margin-bottom: 30px;
 }
 
-.studio-text {
+.studio__text {
     max-width: 270px;
     font-weight: 400;
     font-size: 14px;

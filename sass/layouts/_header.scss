@@ -2,11 +2,29 @@
     border-bottom: 1px solid var(--header-border_bottom-color);
 }
 
-.header-container {
+.header__container {
     display: flex;
 }
 
+.site__nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    display: inline-block;
+    font-family: "Raleway"; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-nav-link-hover-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo__part {
     display: inline-block;
     font-family: "Raleway";
     font-style: normal;
@@ -14,12 +32,9 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--text-nav-link-hover-color);
-    padding-top: 25px;
-    padding-bottom: 24px;
-}
+   }
 
-.accent {
+.logo__part--dark {
     display: inline-block;
     font-family: "Raleway";
     font-style: normal;
@@ -31,13 +46,13 @@
     margin-right: 93px;
 }
 
-.site-nav {
+.menu {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.nav-link {
+.menu__link {
     position: relative;
     transition: color var(--transition-duration);
     display: block;
@@ -53,7 +68,7 @@
     color: var(--text-nav-link-color);
 }
 
-.nav-link.current::after {
+.menu__link.current::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -70,26 +85,29 @@
 
 
 
-.site-nav .link.current {
+.menu__link.current {
     color: var(--text-nav-link-hover-color);
 }
 
-/* .auth-nav */
-.auth-icon {
-    margin-right: 10px;
-}
+/* contacts */
 
-.auth-nav {
+
+
+
+.contacts {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    
+}
+.contacts--pos {
+margin-left: auto;
 }
 
-.auth-nav .item+.item {
+.contacts__item+.contacts__item {
     margin-left: 50px;
 }
 
-.auth-link {
+.contacts__link {
     transition: color var(--transition-duration);
     display: flex;
     align-items: center;
@@ -99,15 +117,18 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--auth-link-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     &:hover,
     &:focus {
             color: var(--text-nav-link-hover-color);
         }
 }
 
-.auth-icon {
+.contacts__icon {
     fill: currentColor;
+}
+.contacts__icon {
+    margin-right: 10px;
 }
 

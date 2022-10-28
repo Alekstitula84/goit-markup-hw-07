@@ -1,29 +1,18 @@
-.footer {
+.footer--section {
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--hero-bacground-color);
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     gap: 70px;
     align-items: baseline;
 }
 
-.footer-logo {
-    text-decoration: none;
-    display: inline-block;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: var(--text-nav-link-hover-color);
-    margin-bottom: 20px;
-}
 
-.accent-footer {
+
+.logo__part--light {
     display: inline-block;
     font-family: "Raleway";
     font-style: normal;
@@ -32,9 +21,12 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--hero-title-color);
+    margin-bottom: 20px;
 }
 
-.footer-adres {
+
+
+.company-data__adres {
     transition: color var(--transition-duration);
     display: inline-block;
     font-weight: 400;
@@ -44,29 +36,30 @@
     letter-spacing: 0.03em;
     color: var(--hero-title-color);
     margin-bottom: 9px;
+    &:hover,
+    &:focus {
+            color: var(--text-nav-link-hover-color);
+        }
 }
 
-.footer-adres:hover,
-.footer-adres:focus {
-    color: var(--text-nav-link-hover-color);
-}
 
-.footer-nav {
+
+.company-data__nav {
     transition: color var(--transition-duration);
     display: inline-block;
-    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-nav-color);
     margin-bottom: 9px;
+    &:hover,
+    &:focus {
+            color: var(--text-nav-link-hover-color);
+        }
 }
 
-.footer-nav:hover,
-.footer-nav:focus {
-    color: var(--text-nav-link-hover-color);
-}
+
 
 .footer-soc-title {
     display: inline-block;

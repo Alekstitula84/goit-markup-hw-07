@@ -15,3 +15,12 @@ input,
 textarea {
     outline: transparent;
 }
+
+.top__title {
+    @include font (700, 36px, 1.16, 0.03em);
+}
+
+.top__title--position {
+    text-align: center;
+    margin-bottom: 50px;
+}

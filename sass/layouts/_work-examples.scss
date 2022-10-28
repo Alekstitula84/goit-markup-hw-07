@@ -1,24 +1,17 @@
 
-.work-examp {
+.examples--section {
   padding-top: 0;
   padding-bottom: 94px;
 }
 
-.work-examp-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
 
-.work-examp-list {
+
+.work-examp {
   display: flex;
   gap: 30px;
 }
 
-.work-examp-item {
+.work-examp__item {
   position: relative;
   width: calc((100% - 60px) / 3);
   &::before {
@@ -33,11 +26,11 @@
 
 
 
-.work-examp-img {
+.work-examp__img {
   display: block;
 }
 
-.work-examp-text {
+.work-examp__text {
   position: absolute;
   left: 50%;
   bottom: 0%;

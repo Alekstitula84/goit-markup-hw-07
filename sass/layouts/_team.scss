@@ -1,31 +1,24 @@
-.team {
+.team--color {
     background: var(--team-background-color);
 }
 
-.team-container {
+.team__container {
     display: flex;
     max-height: 428px;
 }
 
-.team-main-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-}
 
-.team-item {
+
+.brigade__item {
     background-color: var(--hero-title-color);
     width: calc((100% - 90px) / 4);
 }
 
-.img-foto {
+.brigade__foto {
     margin-bottom: 30px;
 }
 
-.team-title {
+.brigade__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -34,18 +27,18 @@
     margin-bottom: 10px;
 }
 
-.team-list {
+.brigade {
     display: flex;
     gap: 30px;
 }
 
-.team-item {
+.brigade__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-pos {
+.brigade__pos {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -55,7 +48,7 @@
     padding-bottom: 16px;
 }
 
-.team-soc {
+.social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +56,7 @@
     margin-bottom: 30px;
 }
 
-.team-soc-link {
+.social__link {
     transition: color var(--transition-duration), fill var(--transition-duration),
         background-color var(--transition-duration);
     width: 44px;
@@ -81,7 +74,7 @@
         }
 }
 
-.team-soc-icon {
+.social__icon {
     fill: currentColor;
 }
 
