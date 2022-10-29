@@ -1,20 +1,20 @@
-.img-list {
+.cardset {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.filters-img {
+.card__wrap-img {
     display: block;
 }
 
-.image-wrap {
+.card__desription {
     padding: 20px 24px;
     border: 1px solid var(--portfolio-border-color);
     border-top: none;
 }
 
-.img-title {
+.card__desription-title {
     display: block;
     font-weight: 700;
     font-size: 18px;
@@ -24,12 +24,12 @@
     margin-bottom: 4px;
 }
 
-.img-top-wrap {
+.card__wrap {
     position: relative;
     overflow: hidden;
 }
 
-.img-top-text {
+.card__wrap-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@
 
 
 
-.img-text {
+.card__desription-text {
     display: block;
     font-weight: 400;
     font-size: 16px;
@@ -56,14 +56,14 @@
     color: var(--auth-link-color);
 }
 
-.img-item {
+.cardset__item {
     flex-basis: calc(100% / 3 - 60px);
-    &:hover .img-top-text {
+    &:hover .card__wrap-text {
             transform: translateY(0);
         }
 }
 
-.img-link {
+.card {
     transition: box-shadow var(--transition-duration);
     display: block;
     &:hover,

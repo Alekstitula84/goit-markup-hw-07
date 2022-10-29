@@ -1,4 +1,12 @@
-.filters-btn {
+.filters {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.filters__btn {
     display: inline-block;
     transition: background-color var(--transition-duration),
         color var(--transition-duration), box-shadow var(--transition-duration);
@@ -24,10 +32,3 @@
 }
 
 
-
-.filters-list {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
-}
