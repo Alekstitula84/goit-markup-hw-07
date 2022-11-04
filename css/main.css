@@ -509,7 +509,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 70px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -556,6 +555,10 @@ textarea {
 }
 .company-data__nav:hover, .company-data__nav:focus {
   color: var(--text-nav-link-hover-color);
+}
+
+.soc {
+  margin-left: 70px;
 }
 
 .soc__title {
@@ -855,6 +858,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 93px;
   gap: 12px;
 }
 
