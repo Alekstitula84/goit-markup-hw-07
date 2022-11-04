@@ -1,7 +1,27 @@
 .cardset {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+        display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-left: auto;
+            margin-right: auto;
+}
+
+
+.cardset__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+
+    &:hover .card__wrap-text {
+        transform: translateY(0);
+    }
 }
 
 .card__wrap-img {
@@ -56,12 +76,7 @@
     color: var(--auth-link-color);
 }
 
-.cardset__item {
-    flex-basis: calc(100% / 3 - 60px);
-    &:hover .card__wrap-text {
-            transform: translateY(0);
-        }
-}
+
 
 .card {
     transition: box-shadow var(--transition-duration);

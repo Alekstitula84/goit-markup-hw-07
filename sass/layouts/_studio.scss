@@ -5,15 +5,39 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 }
 
 .studio {
     display: flex;
-    gap: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
 }
 
+.studio__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+
 .studio__icon {
-    margin-bottom: 30px;
+    @media screen and (max-width: 1199px) {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        margin-bottom: 30px;
 }
 
 .studio__text {

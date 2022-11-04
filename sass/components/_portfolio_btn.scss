@@ -1,8 +1,29 @@
 .filters {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.filters-item {
+
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 16px) / 3);
+    }
+
+
 }
 
 
